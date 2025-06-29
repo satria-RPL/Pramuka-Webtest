@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* button */
+.btn-danger {
+    background-color: green;
+    border-color: green;
+    border-radius: 10px;
+    padding: 10px 45px;
+    color: white;
+}
+
+.btn-outline-danger {
+    background-color: transparent;
+    border-color: red;
+    border-radius: 10px;
+    padding: 10px 45px;
+    color: red;
+}
+
+/* navbar */
+.nav-item .nav-link{
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.scroll-nav-active {
+    background-color: white;
+    /* border-bottom: 1px solid green; */
+    box-shadow: 1px 1px 11px -1px rgba(1, 1, 1, 0.08);
+}
+
+.text-nav-active {
+    color: black;
+}
+
+#hero {
+    background-image: url("../../assets/images/bg-awal3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+}
+
+.hero-title{
+    padding-top: 200px;
+}
+
+@media screen and (min-width: 450px) {
+.hero-text{
+    font-size: 35px;
+    font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 550px) {
+.hero-text{
+    font-size: 35px;
+    font-weight: 600;
+    }
+}
+    
+@media screen and (min-width: 800px) {
+.hero-text{
+    font-size: 65px;
+    font-weight: 600;
+    }
+}
+
+/* foto */
+.section-foto {
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.parallax {
+    background-image: url("../../assets/images/Background1.png");
+}
+
+.stripe-putih{
+ height: 5px;
+ width: 40px;
+ background-color: red;
+}
+
+.stripe{
+    height: 5px;
+    width: 40px;
+    background-color: red;
+}
+
+/* Vidio */
+#vidio {
+    background-image: url("../../assets/images/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 00px;
+}
+
