@@ -6,7 +6,6 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,7 +46,3 @@ Route::post('/photo/update/{id}', [PhotoController::class, 'update'])->name('pho
 Route::post('/photo/destroy/{id}', [PhotoController::class, 'destroy'])->name('photo.destroy')->middleware('auth');
 
 
-Route::get('/run-migrate', function () {
-    Artisan::call('migrate:fresh', ['--seed' => true, '--force' => true]);
-    return '✅ Migrate fresh with seed completed';
-});
