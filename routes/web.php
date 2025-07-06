@@ -45,12 +45,3 @@ Route::post('/photo/store', [PhotoController::class, 'store'])->name('photo.stor
 Route::post('/photo/update/{id}', [PhotoController::class, 'update'])->name('photo.update')->middleware('auth'); 
 Route::post('/photo/destroy/{id}', [PhotoController::class, 'destroy'])->name('photo.destroy')->middleware('auth');
 
-
-use Illuminate\Support\Facades\Artisan;
-
-Route::get('/clear-cache', function () {
-    Artisan::call('config:cache');
-    Artisan::call('route:cache');
-    Artisan::call('view:cache');
-    return '✅ Cache cleared and rebuilt';
-});
