@@ -47,7 +47,3 @@ Route::post('/photo/update/{id}', [PhotoController::class, 'update'])->name('pho
 Route::post('/photo/destroy/{id}', [PhotoController::class, 'destroy'])->name('photo.destroy')->middleware('auth');
 
 
-Route::get('/storage-link', function () {
-    Artisan::call('storage:link');
-    return '✅ Storage linked';
-});
