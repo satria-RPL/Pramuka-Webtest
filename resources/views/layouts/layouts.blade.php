@@ -13,7 +13,7 @@
     @if (Request::segment(1) == '')
         <meta property="og:title" content="Pramuka Ambalan Milenium" />
         <meta name="description" content="Pramuka Ambalan Milenium" />
-        <meta property="og:url" content="http://pramukaambalanmilenium.com" />
+        <meta property="og:url" content="https://pramukaambalanmilenium.up.railway.app" />
         <meta property="og:description" content="Pramuka Ambalan Milenium" />
         <meta property="og:image" content="{{ asset('assets/icons/logo-ambalan.png') }}" />
         <meta property="og:type" content="article" />
@@ -21,7 +21,7 @@
     @elseif (Request::segment(1) == 'detail')
         <meta property="og:title" content="{{ $artikel->judul }}" />
         <meta name="description" content="{{ $artikel->judul }}" />
-        <meta property="og:url" content="http://pramukaambalanmilenium.com/detail/{{ $artikel->slug }}" />
+        <meta property="og:url" content="https://pramukaambalanmilenium.up.railway.app/detail/{{ $artikel->slug }}" />
         <meta property="og:description" content="{{ $artikel->judul }}" />
         @if ($artikel->image)
             <meta property="og:image" content="{{ asset('storage/artikel/' . $artikel->image) }}" />
