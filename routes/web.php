@@ -6,7 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Artisan;
+// use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,9 +51,9 @@ Route::post('/photo/destroy/{id}', [PhotoController::class, 'destroy'])->name('p
 //     return '✅ Storage linked';
 // });
 
-Route::get('/clear-cache', function () {
-    Artisan::call('config:cache');
-    Artisan::call('route:cache');
-    Artisan::call('view:cache');
-    return '✅ Cache cleared';
-});
+// Route::get('/clear-cache', function () {
+//     Artisan::call('config:cache');
+//     Artisan::call('route:cache');
+//     Artisan::call('view:cache');
+//     return '✅ Cache cleared';
+// });
