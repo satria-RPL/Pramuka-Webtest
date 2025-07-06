@@ -50,3 +50,10 @@ Route::get('/storage-link', function () {
     Artisan::call('storage:link');
     return '✅ Storage linked';
 });
+
+Route::get('/clear-cache', function () {
+    Artisan::call('config:cache');
+    Artisan::call('route:cache');
+    Artisan::call('view:cache');
+    return '✅ Cache cleared';
+});
